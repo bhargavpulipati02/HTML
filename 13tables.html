@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <!-- Tables are used to represent the data in a simple way using rows and columns-->
+    <!-- horizontal line of data is called row & vertical line is called column-->
+    <!-- table in html comprises <table> tag -->
+    <h1> Table demo </h1>
+    <table border="5">
+        <!-- caption for like fig1,2  ..-->
+        <caption>Table 1</caption>
+        <!-- border is like pixel(big & small)-->
+        <!-- tr tabel row  tr*4-->
+        <!-- th automatically becomes center  -->
+         <tr>
+            <!-- table heading th th*2-->
+            <!-- instead of th we can use td (no diff but th will be in bold)-->
+            <th>Name</th>
+            <th>Age</th>
+            <th>PhoneNo</th>
+         </tr>
+         <tr>
+            <td>bhargav</td>
+            <td>18</td>
+            <td>12121</td>
+
+         </tr>
+         <tr>
+            <td rowspan="2">janu</td>
+            <td colspan="2">22</td>
+            <!-- <td>342121</td> -->
+         </tr>
+         <tr>
+            <!-- <td >janu</td> -->
+            <td>22</td>
+            <td>342121</td>
+
+            <!-- rowspan combines the rows-->
+            <!-- colspan combines columns -->
+         </tr>
+    </table>
+</body>
+</html>

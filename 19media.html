@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+    <!-- media deals with html5 elements.1)picture tag: different types of images in desktop, mobile etc-->
+    <picture>
+        <!-- when u pres inspect and reduce the wodth the image allocated will reduce according to the min-width-->
+        <source media="(min-width:998px )" srcset="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg">   
+        <source media="(min-width:680px )" srcset="https://static.vecteezy.com/system/resources/thumbnails/022/963/918/small_2x/ai-generative-cute-cat-isolated-on-solid-background-photo.jpg">
+        <source media="(min-width:320px )" srcset="https://cdn.theatlantic.com/thumbor/cIIQ8l-VonXwKKSwFPaaa57rztU=/559x0:2259x1700/540x540/media/img/mt/2017/06/shutterstock_319985324/original.jpg">
+        <!-- image is for by default! it follows the preference as 1->2->3-> img-->
+        <img src="https://www.shutterstock.com/image-photo/funny-large-longhair-gray-kitten-600nw-1842198919.jpg" alt="image not found">
+    
+    </picture>
+    <!-- controls should be there -->
+    <!-- autoplay ??? -> doesn't allow in chrome bcoz of audio so we use muted-->
+    <video height="200px" controls autoplay muted >
+        <source src="./assets/3195394-uhd_3840_2160_25fps.mp4">
+    </video>
+    <!-- for audio !! -->
+    <audio controls autoplay muted>
+        <source src="./assets/sample4.mp3" type="">
+
+    </audio>
+
+</body>
+</html>

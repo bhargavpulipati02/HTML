@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhargav's Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bhargav's Profile Page</h1>
+    <hr>
+    
+    <p><strong>About Me: </strong></p>
+    <h5>
+        Name: Bhargav Pulipati
+    </h5>
+    <h5>
+        Net Id: bxp220044
+    </h5>
+
+    <p>Hey there! I'm Bhargav Pulipati, currently pursuing my MS in Computer Science. I'm really into exploring the latest in tech and pushing boundaries in the field.</p>
+    
+    <img src="./assets/bhargavimage.JPG" alt="Bhargav Pulipati" height="100">
+    
+    <p><strong>Name:</strong> Bhargav Pulipati</p>
+    <p><strong>Age:</strong> 18</p>
+    
+    <dl>
+        <dt><strong>Skills:</strong></dt>
+        <dd>
+            <ul>
+                <li>Python</li>
+                <li>Machine Learning</li>
+                <li>Java</li>
+                <li>HTML, CSS</li>
+            </ul>
+        </dd>
+    </dl>
+    
+    <p><strong>Email:</strong> <a href="mailto:bhargav.pulipati02@gmail.com">bhargav.pulipati02@gmail.com</a></p>
+    <p><strong>Phone Number:</strong> <a href="tel:9858884499">9858884499</a></p>
+    
+    <p><strong>Download Resume:</strong> <a href="./assets/Resume dsa.pdf" download="bhargav_resume.pdf" title="Download Bhargav's Resume">Download Resume</a></p>
+    
+    <h5>Additional Information</h5>
+    <table>
+        <thead>
+            <tr>
+                <th>Attribute</th>
+                <th>Detail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td>Bhargav Pulipati</td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Skills</td>
+                <td>Python, Machine Learning, Java, HTML, CSS</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><a href="mailto:bhargav.pulipati02@gmail.com">bhargav.pulipati02@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><a href="tel:9858884499">9858884499</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h5>Contact Form</h5>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>

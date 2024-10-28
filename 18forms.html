@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <form action="">
+        <!-- Radio : radio or button inputs are used when we want to select single choice -->
+        <!-- we can use type radio with valid labels but names of similar radios should be same -->
+        <!-- name should be same bcoz otherwise both will be selected-->
+        <p> Gender: </p>
+        <!-- if value = abc/bbc : it send it to backend in the url-->
+        <!-- <input type="radio" name="gender" id="m" value="bbc" >-->
+        <!-- sending val;ue to the backend is our responsibility-->
+        <!-- so in value for male it should be male and fopr female it should be female-->
+        <input type="radio" name="gender" id="m" name="male"checked>
+        <!-- checked default will be selected !! -->
+        <label for="m"> male</label>
+        <input type="radio" name="gender" value="female" id="f">
+        <label for="f"> female</label>
+        <button>
+            submit 
+        </button>
+
+
+
+        <br><br>
+        <!-- checkboxes are used to select mcq's-->
+        <!-- similar should have same names-->
+        <p> Languages known:</p>
+        <input type="checkbox" name="languages" id="t">  
+        <label for="t">Telugu</label>
+        <input type="checkbox" name="languages" id="h">  
+        <label for="h">Hindi</label>
+        <input type="checkbox" name="languages" id="k">  
+        <label for="k">Kannada</label>
+        <button>
+            Submit
+        </button>
+
+
+
+
+        <br><br><br>
+        <!-- select is used to create drop downs which can select single or multiple-->
+        <select name="car" id="car">
+        <!-- disabled dont allow you to select-->
+        <!-- if need multiple add multiple !-->
+        <option value=""disabled>please select one</option>
+        <option value="BMW">BMW</option>
+        <!-- if you dont give value as a/b/c/d or name it doesn't send to backend-->
+        <option value="Audi">audi</option>
+        <option value="tesla">tesla</option>
+        </select>
+        <button>
+            submit
+        </button>
+
+
+        <br><br><br>
+        <!-- select is used to create drop downs which can select single or multiple-->
+        <select name="car" id="car" multiple>
+        <!-- <select name="car" id="car" multiple size="2">  -->
+        <!-- disabled dont allow you to select-->
+        <!-- if need multiple add multiple !-->
+        <option value="">please select one/multiple</option>
+        <option value="BMW">BMW</option>
+        <!-- if you dont give value as a/b/c/d or name it doesn't send to backend-->
+        <option value="Audi">audi</option>
+        <option value="tesla">tesla</option>
+        </select>
+        <button>
+            submit
+        </button>
+
+        <br><br><br>
+        <!-- select is used to create drop downs which can select single or multiple-->
+        <select name="car" id="car" >
+        <!-- <select name="car" id="car" multiple size="2">  -->
+        <!-- disabled dont allow you to select-->
+        <!-- if need multiple add multiple !-->
+        <optgroup label="mid-range">
+            <option value="tesla">tesla</option>
+            <option value="suzuki">suzuki</option>
+            <option value="nano">nano</option>
+        </optgroup>
+        <!-- <option value="">please select one/multiple</option> -->
+        <optgroup label="high range">
+        <option value="BMW">BMW</option>
+        <!-- if you dont give value as a/b/c/d or name it doesn't send to backend-->
+        <option value="Audi">audi</option>
+        </optgroup>
+        
+        
+        </select>
+        <button>
+            submit
+        </button>
+
+
+        <textarea name="comments" id="c1" rows="2" columns="10"></textarea>
+        <!-- google - text area comes down by down when ypou search where as in youtube
+         you get in a single line -->
+
+        <input type="submit" value="submits">
+        <input type="reset" value="clear">
+        <!-- clears all what have you written!! -->
+        <!-- better to use input submit !!! -->
+
+        <!-- use required if you want something for sure -->
+        <textarea name="comments" id="c1" rows="2" columns="10" required></textarea>
+        <!-- google - text area comes down by down when ypou search where as in youtube
+         you get in a single line -->
+
+        <input type="submit" value="submits">
+        <input type="reset" value="clear">
+        <!-- we will generally have one submit per one form!! do you remember-->
+        <!-- for password we can set minlength & maxlength -->
+
+        <input type="password" name="pwd" minlength="8"><br><br>
+
+
+        <!-- min age-->
+        age: <input type="number" name="age" id="" min="20">
+        <!-- its like disabled where user cannot enter anything manually !! -->
+        EnterName: <input type="text" name="name" id="" value="bhargav" disabled>
+
+        <!-- read only(stores in db) vs disabled(doesn't store in db)-->
+
+        <!-- pwd patterns (!,..)-->
+        <!-- regex !!! => NLP-->
+        <input type="password" name="" id="" pattern="[A-Z]{5}">
+        <!-- [A-Za-z]{5}+./[0-9]{2,5}(min 2)-->
+        <!-- search for regular expressions chear sheet and look into it -->
+        <!-- validation is possible without java script its an interview question-->
+    </form>
+
+</body>
+</html>

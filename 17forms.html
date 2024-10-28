@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <!-- marquee tag sliding -->
+    <marquee behavior="" direction="right">Hellooo</marquee>
+    <!-- mdn web docs is the documentation for html prefer it-->
+
+    <!-- you can action to send the data when submitted maybe!! -->
+    <!-- <form action="main.java"> -->
+    <form action="main.java" method="post">
+        <!-- method is how data is transferred-->
+        <!-- POST DOESN'T SHOW IN THE URL WHERE GET SHOWS-->
+        <!-- even tough all look same but text,email and passwords type are differnet-->
+        <!-- 2 are type and name-->
+         <!-- un doesn't come in UI its just a kind of a vairable-->
+        <!-- when you submit:
+        http://127.0.0.1:5501/main.java?un=frerf&em=edfie%40gmail.com&pwd=fvdfv+
+        -->
+        <!-- get request will show (by default if we don't do method=)-->
+        <!-- use post request such that it doesn't show in url-->
+        <!-- http://127.0.0.1:5501/main.java -->
+
+        <!-- we can connect label and input by giving same id: connect means when you click label you get select the input(ie. box)-->
+        <label for="inp1">name:</label>
+        <!-- labels for and id should be same to get them connected-->
+        <input type="text" name="un" id="inp1"><br><br>
+        <!-- u can also use placeholder just like something visible text when you start typing it vanishes -->
+        <input type="email" name="em" placeholder="please enter only mail"><br><br>
+
+        <!-- different types -->
+
+        <!-- how do you get prefiiled data???-->
+        <!-- use value-->
+        <input type="number" name="num" value="18"> 
+
+
+        <input type="color" name="" id="">
+
+        <input type="date" name="" id="">
+
+        <!-- u can check by date:-->
+        <input type="datetime-local" name="" id="">
+        <input type="password" name="pwd"><br><br>
+
+
+        <input type="file" name="" id="">
+        <!-- users can upload file -->
+
+        <input type="image" src="" alt="">
+
+        <input type="month" name="" id="">
+
+        <input type="range" name="" id="">
+
+        <input type="hidden" name="gender" value="male">
+        <!-- i will get male as hidden -->
+         <!-- name basically sends so to the backend, value=predefined , placeholder=invisible like temp text -->
+        
+        <input type="search" name="" id="">
+        <!-- enter it searches or mark  -->
+
+
+        <input type="tel" name="" id="">
+
+        <input type="time" name="" id="">
+
+        <input type="url" name="" id="">
+
+        <input type="week" name="" id="">
+        
+        <button>submit</button>
+    </form>
+    
+</body>
+</html>
